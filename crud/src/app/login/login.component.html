@@ -1,0 +1,20 @@
+<div class="example-container">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm)">
+        <mat-form-field>
+            <input matInput placeholder="username" formControlName="username">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="password" formControlName="password">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="grant_type" formControlName="grant_type">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="number" placeholder="client_id" formControlName="client_id">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="client_secret" formControlName="client_secret">
+        </mat-form-field>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    </form>
+</div>

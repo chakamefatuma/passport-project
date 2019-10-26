@@ -1,0 +1,18 @@
+<div class="example-container">
+    <form [formGroup]="productFrom" (ngSubmit)="onSubmit(productFrom)">
+        <mat-form-field>
+            <input matInput placeholder="name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="detail" formControlName="detail">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="price" formControlName="price">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="image" formControlName="image">
+        </mat-form-field>
+
+        <button type="submit" [disabled]="!productFrom.valid">Submit</button>
+    </form>
+</div>
