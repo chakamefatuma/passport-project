@@ -7,5 +7,3 @@ api  => config domain: http://api.test (backend)
 crud => angular 8 (frontend)
 
 
-laravel passport I have studied here: https://itsolutionstuff.com/post/build-restful-api-in-laravel-58-exampleexample.html
-angular 8: https://angular.io and many other sources
